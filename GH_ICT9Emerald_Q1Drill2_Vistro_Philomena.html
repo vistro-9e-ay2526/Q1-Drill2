@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Drill 2</title>
+<!-- GOOGLE FONT -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Pompiere&display=swap" rel="stylesheet">
+	
+	<style type="text/css">
+		body{ 
+			background-image: url('images/Movie Background.png') ;
+			font-family:"Epunda Slab", serif;
+		}
+		h1{
+			text-align: center;
+			color: black;
+		}
+		input[type="text"], input[type="email"], textarea, select{
+			width:90%;
+			border-radius: 15px;
+			background-color: #E6E6FA;
+
+		}
+	input[type="submit"], [type="reset"]{
+		width: 40%;
+		background-color: #E6E6FA;
+
+	}
+		form{
+			margin-left: auto;
+			margin-right: auto;
+			background-color: whitesmoke ;
+			width: 35%;
+			padding: 20px;
+			border-radius: 20px;
+			Box-shadow: 10px 10px 5px 0px rgba(170, 156, 156, 0.75);
+			color: black ;
+		}
+	</style>
+</head>
+<body>
+
+<form>	
+	<h1> Movie Recommendation Form </h1>
+
+		<label for="yourname"><h4>Your Name:</h4></label>
+		<input type="text" name="yourname">
+		<br>
+		<label for="youremail"><h4>Your Email:</h4></label>
+		<input type="email" name="youremail">
+		<br>
+		<label for="moviename"><h4>Recommended Movie:</h4></label>
+		<input type="text" name="moviename">
+		<br>
+		<label><h4>Why do you recommend this movie?</h4></label>
+		<textarea cols="40" rows="5" placehodler="Please handle with care"></textarea>
+		<br>
+
+	<!--Genre-->
+	<legend><h4>Genres (Select all that apply)</h4></legend>
+
+		<input type="checkbox" name="genre" value="Action">
+		<label>Action</label>
+
+		<input type="checkbox" name="genre" value="Comedy">
+		<label>Comedy</label>
+
+		<input type="checkbox" name="genre" value="Fantasy">
+		<label>Fantasy</label>
+
+		<input type="checkbox" name="genre" value="Horror">
+		<label>Horror</label>
+
+		<input type="checkbox" name="genre" value="Musical">
+		<label>Musical</label>
+
+		<input type="checkbox" name="genre" value="Mystery">
+		<label>Mystery</label><br>
+
+		<input type="checkbox" name="genre" value="Romance">
+		<label>Romance</label>
+
+		<input type="checkbox" name="genre" value="Thriller">
+		<label>Thriller</label>
+
+		<input type="checkbox" name="genre" value="Sci-fi">
+		<label>Sci-fi</label>
+		<br>
+
+	<!--Rating-->
+	<legend><h4>Rate the movie</h4></legend>
+
+		
+		<input type="radio" name="rating" value="1">
+		<label>1 (worst)</label>
+
+		<input type="radio" name="rating" value="2">
+		<label>2</label>
+
+		<input type="radio" name="rating" value="3">
+		<label>3</label>
+
+		<input type="radio" name="rating" value="4">
+		<label>4</label>
+
+		<input type="radio" name="rating" value="5">
+		<label>5 (best)</label>
+		
+
+	<!--Streaming-->
+	<legend><h4> Where did you watch it? </h4></legend>
+
+
+		<select id="where-did-you-watch-it" placehodler="--Select Streaming Site--">
+			<option value="Netflix">Netflix</option>
+			<option value="Disney+">Disney+</option>
+			<option value="Amazon Prime Video">Amazon Prime Video</option>
+			<option value="Hulu">Hulu</option>
+		</select>
+		<br>
+		<br>
+
+	<input type="submit" value="Submit Recommendation">
+	<input type="reset" value="Reset Form">
+</form>
+
+</body>
+</html>
